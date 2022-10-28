@@ -14,5 +14,5 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 require("./app/controllers/index")(app);
 
-app.listen(3001);
+app.listen(process.env.PORT || 3001);
 console.log("Escutando na porta 3001");
